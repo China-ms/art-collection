@@ -7,6 +7,9 @@ toc: true
 desc: 这篇文章主要会介绍比特币（Bitcoin）、以太坊（Ethereum）和 EOS 作为一个分布式网络是如何达到分布式一致性的，文章中会从 CAP 理论、拜占庭将军问题以及 FLP 开始介绍分布式一致性相关概念，随后介绍传统分布式系统中的共识算法 Paxos 和 Raft 以及区块链网络中使用工作量证明（POW, Proof-of-Work）、权益证明（POS, Proof-of-Stake）以及委托权益证明（DPOS, Delegated Proof-of-Stake）几种共识算法的原理。
 ---
 
++ [分布式一致性与共识算法](https://draveness.me/consensus)
++ [UTXO 与账户余额模型](https://draveness.me/utxo-account-models)
+
 区块链技术是近几年逐渐变得非常热门的技术，以比特币为首的密码货币其实已经被无数人所知晓，但是却很少有人会去研究它们的底层技术，也就是作为一个分布式网络比特币等加密货币是如何工作的。
 
 ![cryptocurrency](https://img.draveness.me/2017-12-18-cryptocurrency.png)
