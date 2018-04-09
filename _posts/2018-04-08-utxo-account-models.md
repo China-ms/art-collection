@@ -16,7 +16,7 @@ desc: 从写上一篇介绍区块链共识算法的文章到现在已经过去�
 
 ![internal-implementaion-of-blockchain](https://img.draveness.me/2018-04-05-internal-implementaion-of-blockchain.png)
 
-在这篇文章中，我们会分别介绍两种不同区块链模型的实现方式以及优缺点，我们会分别以 Bitcoin 和 Ethereum 为例分别介绍 UTXO 模型和账户余额模型。
+在这篇文章中，我们会分别展示两种不同区块链模型的实现方式以及优缺点，我们会以 Bitcoin 和 Ethereum 为例分别介绍 UTXO 模型和账户余额模型。
 
 ## 区块与区块链
 
