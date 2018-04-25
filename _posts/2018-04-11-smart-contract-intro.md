@@ -7,6 +7,9 @@ toc: true
 desc: 智能合约（Smart Contract）是时下非常热门的概念，它将智能合约描述为一种以信息化方式传播、验证或者执行合约的计算机协议，能够允许在没有第三方的情况下进行可信的交易，并且这些交易是无法被追踪、同时也是不可逆的，文章中将介绍 Ethereum 中用于编写智能合约的编程语言 Solidity 的特点，同时简单介绍 ERC20 协议和接口。
 ---
 
++ [浅入浅出智能合约 - 概述（一）](https://draveness.me/smart-contract-intro)
++ [浅入浅出智能合约 - 部署（二）](https://draveness.me/smart-contract-deploy)
+
 [智能合约](https://en.wikipedia.org/wiki/Smart_contract)（Smart Contract）是时下非常热门的概念，但是它在 20 多年前就已经被~~非著名~~计算机科学家 [Nick Szabo](https://en.wikipedia.org/wiki/Nick_Szabo) 提出了，它将智能合约描述为一种以信息化方式传播、验证或者执行合约的计算机协议，能够允许在没有第三方的情况下进行可信的交易，并且这些交易是无法被追踪、同时也是不可逆的。
 
 > A smart contract is a computer protocol intended to digitally facilitate, verify, or enforce the negotiation or performance of a contract. Smart contracts allow the performance of credible transactions without third parties. These transactions are trackable and irreversible.
@@ -129,6 +132,11 @@ contract EIP20 is EIP20Interface {
 作为面向合约的编程语言 Solidity 的功能非常简单，但是其中的很多概念都是按照区块链网络的特点设计的，对于有经验的开发者来说，学习和编写 Solidity 并不会是一件特别困难和复杂的事情。
 
 需要注意的是作为区块链上合约或者说 DApp，它一旦部署就无法像其他应用一样更新和升级，所以合约一旦出现 bug 就是非常严重的问题，在编写合约期间一定要认真考虑其中的漏洞，避免编写复杂的代码和逻辑，重要的合约一定要通过形式验证保证程序中不存在缺陷才可以部署发布。
+
+## 相关文章
+
++ [浅入浅出智能合约 - 概述（一）](https://draveness.me/smart-contract-intro)
++ [浅入浅出智能合约 - 部署（二）](https://draveness.me/smart-contract-deploy)
 
 ## Reference
 
