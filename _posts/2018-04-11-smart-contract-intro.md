@@ -9,6 +9,7 @@ desc: 智能合约（Smart Contract）是时下非常热门的概念，它将智
 
 + [浅入浅出智能合约 - 概述（一）](https://draveness.me/smart-contract-intro)
 + [浅入浅出智能合约 - 部署（二）](https://draveness.me/smart-contract-deploy)
++ [浅入浅出智能合约 - 调用（三）](https://draveness.me/smart-contract-invoke)
 
 [智能合约](https://en.wikipedia.org/wiki/Smart_contract)（Smart Contract）是时下非常热门的概念，但是它在 20 多年前就已经被~~非著名~~计算机科学家 [Nick Szabo](https://en.wikipedia.org/wiki/Nick_Szabo) 提出了，它将智能合约描述为一种以信息化方式传播、验证或者执行合约的计算机协议，能够允许在没有第三方的情况下进行可信的交易，并且这些交易是无法被追踪、同时也是不可逆的。
 
@@ -137,6 +138,7 @@ contract EIP20 is EIP20Interface {
 
 + [浅入浅出智能合约 - 概述（一）](https://draveness.me/smart-contract-intro)
 + [浅入浅出智能合约 - 部署（二）](https://draveness.me/smart-contract-deploy)
++ [浅入浅出智能合约 - 调用（三）](https://draveness.me/smart-contract-invoke)
 
 ## Reference
 
