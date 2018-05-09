@@ -4,7 +4,7 @@ title: 浅入浅出智能合约 - 调用（三）
 permalink: /smart-contract-invoke
 tags: blockchain ethereum transaction smart-contract solidity
 toc: true
-desc: 在这篇文章中，我们将简单介绍 Ethereum 智能合约中的应用程序二进制接口（ABI）以及如何使用 ABI 调用其他智能合约中的函数，同时包含函数选择器以及参数编码等话题。
+desc: 当我们谈到 Ethereum 的智能合约时，很难不涉及 Solidity 的 ABI，这里的 ABI 就是一种与 Ethereum 生态系统中合约交互的标准方法。我们可以使用 ABI 从区块链外部调用合约（DApp）的提供的服务，也可以在合约中调用其他合约的函数。在这篇文章中，我们将简单介绍 Ethereum 智能合约中的应用程序二进制接口（ABI）以及如何使用 ABI 调用其他智能合约中的函数，同时包含函数选择器以及参数编码等话题。
 ---
 
 + [浅入浅出智能合约 - 概述（一）](https://draveness.me/smart-contract-intro)
