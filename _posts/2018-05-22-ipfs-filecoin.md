@@ -203,13 +203,13 @@ IPFS 文件可以通过 `list` 和 `blob` 进行表示：
 
 在 IPFS 中可以使用如下的可变命名空间来解决这些问题，用户可以发布一个对象，其他节点就可以通过 ipns 加上该用户的节点地址访问到这些发布到网络中的对象：
 
-```
+```shell
 /ipns/XLF2ipQ4jD3UdeX5xp1KBgeHRhemUtaA8Vm/
 ```
 
 当然，我们也可以在现有的 DNS 系统中添加 `TXT` 记录，这样就能通过域名访问 IPFS 网络中发布的文件对象了：
 
-```
+```shell
 ipfs.benet.ai. TXT "ipfs=XLF2ipQ4jD3UdeX5xp1KBgeHRhemUtaA8Vm"
 
 /ipns/XLF2ipQ4jD3UdeX5xp1KBgeHRhemUtaA8Vm
@@ -255,7 +255,7 @@ IPFS 是一个非常有意思的区块链底层技术，它在兼容现有互联
 + [Kademlia: A Peer-to-Peer Information System Based on the XOR Metric](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf)
 + [How does Resolution and Routing work with IPFS?](https://github.com/ipfs/faq/issues/48)
 + [BitSwap Spec](https://github.com/ipfs/specs/tree/master/BitSwap)
-+ [What is FileCoin? | Beginner’s Guide to the Largest-Ever ICO](https://coincentral.com/FileCoin-beginners-guide-largest-ever-ico/)
++ [What is FileCoin? Beginner’s Guide to the Largest-Ever ICO](https://coincentral.com/FileCoin-beginners-guide-largest-ever-ico/)
 + [Proof of Replication](https://FileCoin.io/proof-of-replication.pdf)
 + [go-ipfs](https://github.com/ipfs/go-ipfs)
 
