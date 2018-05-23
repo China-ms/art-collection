@@ -343,19 +343,25 @@ CREATE TABLE test(
 
 ### 脏读
 
+> 在一个事务中，读取了其他事务未提交的数据。
+
 当事务的隔离级别为 `READ UNCOMMITED` 时，我们在 `SESSION 2` 中插入的**未提交**数据在 `SESSION 1` 中是可以访问的。
 
 ![Read-Uncommited-Dirty-Read](https://raw.githubusercontent.com/Draveness/Analyze/master/contents/Database/images/mysql/Read-Uncommited-Dirty-Read.jpg)
 
 ### 不可重复读
 
-当事务的隔离级别为 `READ COMMITED` 时，虽然解决了脏读的问题，但是如果在 `SESSION 1` 先查询了一个范围的数据，在这之后 `SESSION 2` 中插入一条数据并且提交了修改，在这时，如果 `SESSION 1` 中再次使用相同的查询语句，就会发现两次查询的结果不一样。
+> 在一个事务中，同一行记录被访问了两次却得到了不同的结果。
+
+当事务的隔离级别为 `READ COMMITED` 时，虽然解决了脏读的问题，但是如果在 `SESSION 1` 先查询了**一行**数据，在这之后 `SESSION 2` 中修改了同一行数据并且提交了修改，在这时，如果 `SESSION 1` 中再次使用相同的查询语句，就会发现两次查询的结果不一样。
 
 ![Read-Commited-Non-Repeatable-Read](https://raw.githubusercontent.com/Draveness/Analyze/master/contents/Database/images/mysql/Read-Commited-Non-Repeatable-Read.jpg)
 
-不可重复读的原因就是，在 `READ COMMITED` 的隔离级别下，存储引擎不会在查询记录时添加间隙锁，锁定 `id < 5` 这个范围。
+不可重复读的原因就是，在 `READ COMMITED` 的隔离级别下，存储引擎不会在查询记录时添加行锁，锁定 `id = 3` 这条记录。
 
 ### 幻读
+
+> 在一个事务中，同一个范围内的记录被读取时，其他事务向这个范围添加了新的记录。
 
 重新开启了两个会话 `SESSION 1` 和 `SESSION 2`，在 `SESSION 1` 中我们查询全表的信息，没有得到任何记录；在 `SESSION 2` 中向表中插入一条数据并提交；由于 `REPEATABLE READ` 的原因，再次查询全表的数据时，我们获得到的仍然是空集，但是在向表中插入同样的数据却出现了错误。
 
