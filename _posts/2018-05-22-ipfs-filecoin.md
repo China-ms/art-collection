@@ -1,6 +1,6 @@
 ---
 layout: post
-title: IPFS 与 FileCoin
+title: 分布式文件系统 IPFS 与 FileCoin
 permalink: /ipfs-filecoin
 tags: 聊聊区块链 blockchain ipfs filecoin
 toc: true
@@ -249,8 +249,8 @@ IPFS 是一个非常有意思的区块链底层技术，它在兼容现有互联
 ## 相关文章
 
 + 聊聊区块链
-    + [IPFS 与 FileCoin](https://draveness.me/ipfs-filecoin)
-    + IOTA 与物联网
+    + [分布式文件系统 IPFS 与 FileCoin](https://draveness.me/ipfs-filecoin)
+    + 物联网与『高效的』 IOTA
 
 ## Reference
 
