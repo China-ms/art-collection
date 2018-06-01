@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 聊聊区块链：IPFS 与 FileCoin
+title: IPFS 与 FileCoin
 permalink: /ipfs-filecoin
 tags: 聊聊区块链 blockchain ipfs filecoin
 toc: true
@@ -245,6 +245,12 @@ ipfs.benet.ai. TXT "ipfs=XLF2ipQ4jD3UdeX5xp1KBgeHRhemUtaA8Vm"
 ## 总结
 
 IPFS 是一个非常有意思的区块链底层技术，它在兼容现有互联网协议的基础上，实现了点对点的文件存储系统并且为大数据存储提出了方案，作者尝试了一下 IPFS 的官方客户端 [go-ipfs](https://github.com/ipfs/go-ipfs) 也确实比较好用，但是目前也是在项目的早期阶段，很多模块和功能还没有定型，而基于 IPFS 发布的 FileCoin 也没有要发布的确切日志 [Proof of Replication](https://FileCoin.io/proof-of-replication.pdf) 这篇白皮书还被标记为 WIP(Work In Process)，有一些部分也没有完成，所以等待这门技术的成熟也确实需要比较长的一段时间。
+
+## 相关文章
+
++ 聊聊区块链
+    + [IPFS 与 FileCoin](https://draveness.me/ipfs-filecoin)
+    + IOTA 与物联网
 
 ## Reference
 
