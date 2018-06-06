@@ -2,7 +2,7 @@
 layout: post
 title: 物联网与『高效的』IOTA
 permalink: /iota-tangle
-tags: 聊聊区块链 blockchain iota
+tags: 聊聊区块链 blockchain iota tangle POW
 toc: true
 desc: 这一次我们介绍的区块链项目就是 IOTA，它的团队将 IOTA 定义为『次时代的无许可』分布式账本，我们先来看一下它解决了什么问题，再来讨论它的价值。IOTA 使用了基于有向无环图（DAG） 设计的 Tangle，有别于传统的区块链项目，在 IOTA 或者说 Tangle 中，没有区块和链的概念，同时也没有矿工和用户之间的转账并且交易也不收取手续费。Tangle 本质上就是一个有向无环图，所有由节点发出的交易最后都会成为图的一部分，也就是用于存储交易的分布式账本。所有的交易在发送时，都需要确认两笔之前的交易，交易的确认是通过『边』来表示的。
 ---
