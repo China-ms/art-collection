@@ -440,6 +440,38 @@ margin on the iframe, cause it breaks stuff. */
     margin: 0;
 }
 
+#views {
+  float: right;
+  position: relative;
+  right: 35px;
+  top: 0px;
+  font-style: normal;
+}
+
+@media only screen and (max-width: 1550px) {
+  #views {
+    display: none;
+  }
+}
+
+
+#views ul {
+  list-style: none;
+  padding: 0em 1em;
+  min-width: 260px;
+}
+
+#views li {
+  display: list-item;
+  max-width: 260px;
+}
+
+#views a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #999;
+}
+
 
 /* ==========================================================================
    3. Utilities - These things get used a lot
@@ -933,7 +965,7 @@ body.nav-opened .nav {
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
-    width: 80%;
+    width: 75%;
     max-width: 850px;
     margin: 4rem auto;
     padding-bottom: 4rem;
