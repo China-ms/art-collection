@@ -128,7 +128,7 @@ class: "post-template"
            var gitment = new Gitment({
            owner: 'Draveness',
            repo: 'blog-comments',
-           id: "{{ page.url | prepend: site.host_url | truncate: 50, "" }}",
+           id: "{{ page.url | prepend: site.host_url | relative_url }}",
            // labels: ['Gitalk'].concat(["{{ page.tags | join: '","'}}"]),
            oauth: {
            client_id: '9b9309114bace01e2a7e',
