@@ -113,7 +113,7 @@ class: "post-template"
          admin: ['Draveness'],
          // labels: ['Gitalk', 'gitment'].concat(["{{ page.tags | join: '","'}}"]),
          // id: location.origin + location.pathname,
-         id: "{{ page.url | prepend: site.host_url | relative_url }}",
+         id: "{{ page.permalink }}",
          // facebook-like distraction free mode
          distractionFreeMode: false
        });
