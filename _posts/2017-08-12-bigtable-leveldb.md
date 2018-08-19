@@ -3,7 +3,7 @@ layout: post
 toc: true
 title: 浅析 Bigtable 和 LevelDB 的实现
 permalink: /bigtable-leveldb
-tags: server leveldb database nosql bigtable
+tags: 分布式系统 server leveldb database nosql bigtable
 
 desc: 在 2006 年的 OSDI 上，Google 发布了名为 Bigtable 的论文，其中描述了一个用于管理结构化数据的分布式存储系统 Bigtable 的数据模型、接口以及实现等内容。本文会先对文中描述的分布式存储系统进行简单的描述，然后对 Google 开源的 KV 存储数据库 LevelDB 进行分析；LevelDB 可以理解为单点的 Bigtable 的系统，虽然其中没有 Bigtable 中与 tablet 管理以及一些分布式相关的逻辑，不过我们可以通过对 LevelDB 源代码的阅读增加对 Bigtable 的理解。
 ---
@@ -460,11 +460,20 @@ struct TableBuilder::Rep {
 
 到这里，我们就完成了对整个数据读取过程的解析了；对于读操作，我们可以理解为 LevelDB 在它内部的『多级缓存』中依次查找是否存在对应的键，如果存在就会直接返回，唯一与缓存不同可能就是，在数据『命中』后，它并不会把数据移动到更近的地方，而是会把数据移到更远的地方来减少下一次的访问时间，虽然这么听起来却是不可思议，不过仔细想一下确实是这样。
 
-## 小结
+## 总结
 
 在这篇文章中，我们通过对 LevelDB 源代码中读写操作的分析，了解了整个框架的绝大部分实现细节，包括 LevelDB 中存储数据的格式、多级 SSTable、如何进行合并以及管理版本等信息，不过由于篇幅所限，对于其中的一些问题并没有展开详细地进行介绍和分析，例如错误恢复以及缓存等问题；但是对 LevelDB 源代码的阅读，加深了我们对 Bigtable 论文中描述的分布式 KV 存储数据库的理解。
 
 LevelDB 的源代码非常易于阅读，也是学习 C++ 语言非常优秀的资源，如果对文章的内容有疑问，可以在博客下面留言。
+
+## 相关文章
+
++ 分布式系统
+    + 基础
+        + [分布式事务的实现原理](https://draveness.me/distributed-transaction-principle)
+    + 系统
+        + [分布式键值存储 Dynamo 的实现原理](https://draveness.me/dynamo)
+        + [浅析 Bigtable 和 LevelDB 的实现](https://draveness.me/bigtable-leveldb)
 
 ## Reference
 
