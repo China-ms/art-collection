@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 分布式系统 · 分布式事务的实现原理
+title: 分布式事务的实现原理
 permalink: /distributed-transaction-principle
 tags: 分布式系统 分布式事务 transaction
 toc: true
