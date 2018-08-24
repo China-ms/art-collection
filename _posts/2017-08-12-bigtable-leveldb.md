@@ -466,12 +466,7 @@ LevelDB 的源代码非常易于阅读，也是学习 C++ 语言非常优秀的�
 
 ## 相关文章
 
-+ 分布式系统
-    + 基础
-        + [分布式事务的实现原理](https://draveness.me/distributed-transaction-principle)
-    + 系统
-        + [分布式键值存储 Dynamo 的实现原理](https://draveness.me/dynamo)
-        + [浅析 Bigtable 和 LevelDB 的实现](https://draveness.me/bigtable-leveldb)
+{%include related/distributed.md %}
 
 ## Reference
 

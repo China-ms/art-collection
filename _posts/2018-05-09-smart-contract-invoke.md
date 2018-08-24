@@ -152,9 +152,7 @@ MethodID: 0x1003e2d2
 
 ## 相关文章
 
-+ [浅入浅出智能合约 - 概述（一）](https://draveness.me/smart-contract-intro)
-+ [浅入浅出智能合约 - 部署（二）](https://draveness.me/smart-contract-deploy)
-+ [浅入浅出智能合约 - 调用（三）](https://draveness.me/smart-contract-invoke)
+{% include related/smart-contract.md %}
 
 ## Reference
 
