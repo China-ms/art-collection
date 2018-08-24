@@ -9,14 +9,7 @@ desc: 在前两篇文章中，我们已经对 iOS 中的 Model 层以及 View �
 tags: MVC MVVM iOS
 ---
 
-
-
-+ [谈谈 MVX 中的 Model](http://draveness.me/mvx-model.html)
-+ [谈谈 MVX 中的 View](http://draveness.me/mvx-view.html)
-+ [谈谈 MVX 中的 Controller](http://draveness.me/mvx-controller.html)
-+ [浅谈 MVC、MVP 和 MVVM 架构模式](http://draveness.me/mvx.html)
-
-> Follow GitHub: [Draveness](https://github.com/Draveness)
+{% include related/mvc.md %}
 
 在前两篇文章中，我们已经对 iOS 中的 Model 层以及 View 层进行了分析，划分出了它们的具体职责，其中 Model 层除了负责数据的持久存储、缓存工作，还要负责所有 HTTP 请求的发出等工作；而对于 View 层的职责，我们并没有做出太多的改变，有的只是细分其内部的视图种类，以及分离 `UIView` 不应该具有的属性和功能。
 
@@ -595,7 +588,9 @@ extension ViewController {}
 
 本文虽然对 Controller 层的职责进行了分析，但是由于 Controller 在 MVC 中所处的位置，如果不脱离 MVC 架构模式，那么 Controller 的职责很难简化，只能在代码规范和职责划分上进行限制，而在下一篇文章中我们会详细讨论 MVC 以及衍化出来的MVP 以及 MVVM 到底是什么、以及它们有什么样的差异。
 
+## 相关文章
 
+{% include related/mvc.md %}
 
 ## Reference
 

@@ -9,14 +9,7 @@ desc: 在大多数 iOS 的项目中，Model 层只是一个单纯的数据结构
 tags: MVC MVVM iOS
 ---
 
-
-
-+ [谈谈 MVX 中的 Model](http://draveness.me/mvx-model.html)
-+ [谈谈 MVX 中的 View](http://draveness.me/mvx-view.html)
-+ [谈谈 MVX 中的 Controller](http://draveness.me/mvx-controller.html)
-+ [浅谈 MVC、MVP 和 MVVM 架构模式](http://draveness.me/mvx.html)
-
-> Follow GitHub: [Draveness](https://github.com/Draveness)
+{% include related/mvc.md %}
 
 ## 常见的 Model 层
 
@@ -579,4 +572,6 @@ Model 层为上层提供提供的接口其实就是自身的一系列属性，�
 
 iOS 中的 Model 层不应该是一个单纯的数据结构，它应该起到发出 HTTP 请求、进行字段验证以及持久存储的职责，同时为上层提供网络请求的方法以及字段作为接口，为视图的展示提供数据源的作用。我们应该将更多的与 Model 层有关的业务逻辑移到 Model 中以控制 Controller 的复杂性。
 
+## 相关文章
 
+{% include related/mvc.md %}

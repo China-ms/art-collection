@@ -10,12 +10,7 @@ tags: MVC MVVM iOS
 
 ---
 
-
-
-+ [谈谈 MVX 中的 Model](http://draveness.me/mvx-model.html)
-+ [谈谈 MVX 中的 View](http://draveness.me/mvx-view.html)
-+ [谈谈 MVX 中的 Controller](http://draveness.me/mvx-controller.html)
-+ [浅谈 MVC、MVP 和 MVVM 架构模式](http://draveness.me/mvx.html)
+{% include related/mvc.md %}
 
 这是 MVX 系列的第四篇文章，在前面的文章中，我们先后介绍了 MVC 架构模式中的 Model、View 和 Controller 的现状，对比了其他平台中的设计，最后给出了作者理想中的结构。
 
@@ -374,7 +369,9 @@ MVVM 架构模式是微软在 2005 年诞生的，从诞生一开始就与 WPF �
 
 各种架构模式的作用就是分离关注，将属于不同模块的功能分散到合适的位置中，同时尽量降低各个模块的相互依赖并且减少需要联系的胶水代码。文中对于 MVC、MVP 和 MVVM 架构模式的描述很难不掺杂作者的主观意见，如果对文章中的内容有疑问，欢迎提出不同的意见进行讨论。
 
+## 相关文章
 
+{% include related/mvc.md %}
 
 ## Reference
 

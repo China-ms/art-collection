@@ -7,12 +7,7 @@ tags: Rack系列 Unicorn rack ruby server
 desc: 作为 Ruby 社区中老牌的 webserver，在今天也有很多开发者在生产环境使用 Unicorn 处理客户端的发出去的 HTTP 请求，与 WEBrick 和 Thin 不同，Unicorn 使用了完全不同的模型，提供了多进程模型批量处理来自客户端的请求。Unicorn 为 Rails 应用提供并发的方式是使用 fork 创建多个 worker 线程，监听同一个 Socket 上的输入。
 ---
 
-+ [谈谈 Rack 协议与实现](https://draveness.me/rack)
-+ [浅谈 WEBrick 的多线程模型](https://draveness.me/rack-webrick)
-+ [浅谈 Thin 的事件驱动模型](https://draveness.me/rack-thin)
-+ [浅谈 Unicorn 的多进程模型](https://draveness.me/rack-unicorn)
-+ [浅谈 Puma 的并发模型与实现](https://draveness.me/rack-puma)
-+ [Ruby Web 服务器的并发模型与性能](https://draveness.me/ruby-webserver)
+{% include related/rack.md %}
 
 作为 Ruby 社区中老牌的 webserver，在今天也有很多开发者在生产环境使用 Unicorn 处理客户端的发出去的 HTTP 请求，与 WEBrick 和 Thin 不同，Unicorn 使用了完全不同的模型，提供了多进程模型批量处理来自客户端的请求。
 
@@ -637,6 +632,10 @@ Unicorn 的源代码其实是作者读过的可读性最差的 Ruby 代码了，
 
 相比于 WEBrick 的单进程多线程的 I/O 模型，Unicorn 的多进程模型有很多优势，一是能够充分利用多核 CPU 的性能，其次能够通过 master 来管理并监控 Unicorn 中包含的一组 worker 并提供了零宕机部署的功能，除此之外，多进程的 I/O 模型还不在乎当前的应用是否是线程安全的，所以不会出现线程竞争等问题，不过 Unicorn 由于 `fork` 了大量的 worker 进程，如果长时间的在 Unicorn 上运行内存泄露的应用会非常耗费内存资源，可以考虑使用 [unicorn-worker-killer](https://github.com/kzk/unicorn-worker-killer) 来自动重启。
 
+## 相关文章
+
+{% include related/rack.md %}
+
 ## Reference
 
 + [How To Optimize Unicorn Workers in a Ruby on Rails App](https://www.digitalocean.com/community/tutorials/how-to-optimize-unicorn-workers-in-a-ruby-on-rails-app)
@@ -645,3 +644,4 @@ Unicorn 的源代码其实是作者读过的可读性最差的 Ruby 代码了，
 + [Daemon (computing)](https://en.wikipedia.org/wiki/Daemon_(computing))
 + [Nginx 与 Unicorn](http://jiangpeng.info/blogs/2014/03/10/nginx-unicorn.html)
 + [Unicorn!](https://github.com/blog/517-unicorn)
+

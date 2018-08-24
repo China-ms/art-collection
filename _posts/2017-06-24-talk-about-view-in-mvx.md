@@ -5,18 +5,10 @@ title: 谈谈 MVX 中的 View
 date: 2017-06-23 01:34:44.000000000 +08:00
 permalink: /mvx-view
 desc: 这是谈谈 MVX 系列的第二篇文章，上一篇文章中对 iOS 中 Model 层的设计进行了简要的分析；而在这里，我们会对 MVC 中的视图层进行讨论，谈一谈现有的视图层有着什么样的问题，如何在框架的层面上去改进，同时与服务端的视图层进行对比，分析它们的差异。
-
 tags: MVC MVVM iOS
 ---
 
-
-
-+ [谈谈 MVX 中的 Model](http://draveness.me/mvx-model.html)
-+ [谈谈 MVX 中的 View](http://draveness.me/mvx-view.html)
-+ [谈谈 MVX 中的 Controller](http://draveness.me/mvx-controller.html)
-+ [浅谈 MVC、MVP 和 MVVM 架构模式](http://draveness.me/mvx.html)
-
-> Follow GitHub: [Draveness](https://github.com/Draveness)
+{% include related/mvc.md %}
 
 这是谈谈 MVX 系列的第二篇文章，上一篇文章中对 iOS 中 Model 层的设计进行了简要的分析；而在这里，我们会对 MVC 中的视图层进行讨论，谈一谈现有的视图层有着什么样的问题，如何在框架的层面上去改进，同时与服务端的视图层进行对比，分析它们的差异。
 
@@ -449,6 +441,9 @@ public extension Relation where Container == AbsoluteContainer {
 
 Cocoa Touch 中的 UIKit 对视图层的设计在一开始确实是没有问题的，主要原因是在 iOS 早期的布局方式并不复杂，只有单一的 `frame` 布局，而这种方式也恰好能够满足整个平台对于 iOS 应用开发的需要，但是随着屏幕尺寸的增多，苹果逐渐引入的其它布局方式与原有的体系发生了一些冲突，导致在开发时可能遇到奇怪的问题，而这也是本文想要解决的，将原有属于 `UIView` 的职责抽离出来，提供更合理的抽象。
 
+## 相关文章
+
+{% include related/mvc.md %}
 
 
 ## References

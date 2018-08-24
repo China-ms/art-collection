@@ -7,12 +7,7 @@ tags: Rack系列 WEBrick rack ruby server
 desc: 这篇文章会介绍在开发环境中最常用的应用容器 WEBrick 的实现原理，除了通过源代码分析之外，我们也会介绍它的 IO 模型以及一些特点。在 GitHub 上，WEBrick 从 2003 年的六月份就开始开发了，有着十几年历史的 WEBrick 的实现非常简单，总共只有 4000 多行的代码。
 ---
 
-+ [谈谈 Rack 协议与实现](https://draveness.me/rack)
-+ [浅谈 WEBrick 的多线程模型](https://draveness.me/rack-webrick)
-+ [浅谈 Thin 的事件驱动模型](https://draveness.me/rack-thin)
-+ [浅谈 Unicorn 的多进程模型](https://draveness.me/rack-unicorn)
-+ [浅谈 Puma 的并发模型与实现](https://draveness.me/rack-puma)
-+ [Ruby Web 服务器的并发模型与性能](https://draveness.me/ruby-webserver)
+{% include related/rack.md %}
 
 这篇文章会介绍在开发环境中最常用的应用容器 WEBrick 的实现原理，除了通过源代码分析之外，我们也会介绍它的 IO 模型以及一些特点。
 
@@ -459,6 +454,10 @@ end
 ## 总结
 
 WEBrick 是 Ruby 社区中老牌的 webserver，虽然至今也仍然被广泛了解和使用，但是在生产环境中开发者往往会使用更加稳定的 Unicorn 和 Puma 代替它，我们选择在这个系列的文章中介绍它很大原因就是 WEBrick 的源代码与实现足够简单，我们很快就能了解一个 webserver 到底具备那些功能，在接下来的文章中我们就可以分析更加复杂的 webserver、了解更复杂的 IO 模型与实现了。
+
+## 相关文章
+
+{% include related/rack.md %}
 
 ## Reference
 
