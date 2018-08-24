@@ -466,7 +466,7 @@ LevelDB 的源代码非常易于阅读，也是学习 C++ 语言非常优秀的�
 
 ## 相关文章
 
-{%include related/distributed.md %}
+{%include related/distributed-system.md %}
 
 ## Reference
 

@@ -189,7 +189,7 @@ Saga 这种模式其实完全放弃了同时满足事务四大基本特性 ACID 
 
 ## 相关文章
 
-{%include related/distributed.md %}
+{%include related/distributed-system.md %}
 
 ## Reference
 
